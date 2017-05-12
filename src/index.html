@@ -10,5 +10,26 @@
 <h1>测试内容1222232131123213123</h1>
 <b>这是线上编辑的内容</b>
 <script src="scripts/all.js"></script>
+
+
+<script>
+    var arr=[3,1,2,12,21,14,5];
+    function sort(arr) {
+        len=arr.length;
+        for (var k=1,i=len-k;i>=0;i--,k++){
+            for(var r=len-k-1;r>=0;r--){
+                if(arr[i]<arr[r]){
+                    arr[i]^=arr[r],arr[r]^=arr[i],arr[i]^=arr[r];
+                }
+            }
+        }
+        return arr;
+    }
+    sort(arr);
+
+
+</script>
 </body>
 </html>
+
+
